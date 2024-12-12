@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: all 1s;
+}
+
+.root {
+  width: 210px;
+  height: 210px;
+  border: 1px solid;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.row {
+  display: flex;
+}
+
+.box {
+  border: 1px solid;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box.red::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 999px;
+  background-color: red;
+}
+
+.box.black::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 999px;
+  background-color: black;
+}
+
+.container {
+  position: relative;
+  width: 165px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.container svg {
+  max-width: 50px;
+  max-height: 50px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.container svg:active {
+  transform: translateY(3px);
+}
+
+.button-to-left {
+  left: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+.button-to-right {
+  right: 0;
+  bottom: 0;
+  position: absolute;
+}
+.green {
+  background-color:red;
+}
+.win-div {
+  height: 300px;
+  width: 300px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 2px solid black;
+  padding: 20px;
+  text-align: center;
+  z-index: 1000;
+  margin-top: -200px;
+}
+.h1-game {
+  display: flex;
+  height: 60px;
+  width: 250px;
+  border: 2px solid;
+  text-align: center;
+  padding: inherit;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 640px;
+  margin-top: 5px;
+}
+#restart-button{
+  margin-top: 20px;
+  height: 30px;
+  width: 80px;
+}
+.looser-div {
+  height: 300px;
+  width: 300px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 2px solid black;
+  padding: 20px;
+  text-align: center;
+  z-index: 1000;
+  margin-top: -200px;
+}
+#restart-button-loser{
+  margin-top: 20px;
+  height: 30px;
+  width: 80px;
+}
